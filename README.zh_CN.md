@@ -45,6 +45,8 @@ A Hexo theme inspired by Kalafina's song ARIA.
 
 - 自动转换 Markdown 格式的资源文件夹链接到绝对路径。（无需 `hexo-asset-image` 插件。）
 
+- 文章访问加密（配置文件article_encrypt参数设置为true并在文章头添加password属性指定密码即可开启文章访问加密功能）
+
 # 使用前须知
 
 - 使用静态网站生成器需要有一定的相关知识，如果您对这方面毫无了解，不建议使用 Hexo 和 ARIA 建站。请您确定您有基础的 Hexo、YAML、git、Markdown 和 Web 知识再继续。

@@ -30,6 +30,9 @@
     </header>
     <main class="post-main">
       {{ page.content }}
+      {% if theme.vcomment.enable %}
+      {% include "vcomment.njk" %}
+      {% endif %}
     </main>
     <footer class="post-footer"></footer>
   </article>

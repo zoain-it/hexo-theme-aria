@@ -31,7 +31,7 @@ A Hexo theme inspired by Kalafina's song ARIA.
 
 - 优雅的响应式双栏设计和 CSS 动画。
 
-- 内置评论系统（目前支持 [Disqus](https://disqus.com/) 以及 [commenjs](https://github.com/wzpan/comment.js)）。（由于 HyperComments 转为必须付费，已经移除。）
+- 内置评论系统（目前支持 [Disqus](https://disqus.com/) 以及 [commenjs](https://github.com/wzpan/comment.js) 和 [Valine](https://valine.js.org/)）。（由于 HyperComments 转为必须付费，已经移除。）
 
 - 不蒜子访问量计数。
 

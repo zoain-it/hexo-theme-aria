@@ -152,6 +152,12 @@ comment:
     client_id:
     client_secret:
 
+# Valine comment
+vcomment:
+  enable: false
+  appId:
+  appKey:
+
 reward:
   enable: false
   comment: 坚持原创技术分享，您的支持是我前进的动力！

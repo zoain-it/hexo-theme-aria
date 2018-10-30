@@ -1,0 +1,26 @@
+{% block vcomment %}
+{% if page.vcomment !== false %}
+<br>
+<div id="vcomments"></div>
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+    var valine = new Valine();
+    var path = window.location.pathname.replace('index.html','');
+    var isEN = path.indexOf('en') > -1;
+    path = isEN ? path.replace('en/','') : path;
+    valine.init({
+        el: '#vcomments',
+        appId: "{{ theme.vcomment.appId }}",
+        appKey: "{{ theme.vcomment.appKey }}",
+        notify: true,
+        verify: true,
+        placeholder: isEN ? 'I want to hear the voices of others, even if I often hate communication.' : '我希望听到别人的声音, 即使我常常讨厌交流!',
+        avatar: 'mm',
+        path: path,
+        lang: isEN ? 'en' : 'zh-cn',
+        visitor: true
+    })
+</script>
+{% endif %}
+{% endblock %}

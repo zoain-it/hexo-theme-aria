@@ -55,6 +55,9 @@
     </header>
     <main class="post-main" itemprop="articleBody">
       {{ page.content }}
+      {% if theme.vcomment.enable %}
+      {% include "vcomment.njk" %}
+      {% endif %}
     </main>
     <footer class="post-footer">
       {% if page.tags and page.tags.toArray().length %}

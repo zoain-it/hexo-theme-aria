@@ -65,6 +65,9 @@ sidebar: left
 # Animation in Home, Archive, Category and Tag.
 animate: false
 
+# article encrypt
+article_encrypt: false
+
 busuanzi: true
 
 # If you want ARIA generate excerpt, set it to the length you want. If you don't, leave it blank.
@@ -109,6 +112,7 @@ lib_cdn:
   commentjs:
     js:
     css:
+  article_encrypt:
 
 social:
   enable: true

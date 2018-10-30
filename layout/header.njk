@@ -1,4 +1,7 @@
 {% block header %}
+{% if theme.article_encrypt and page.password %}
+<script type="text/javascript" id="encrypt" src="{% if theme.lib_cdn.enable and theme.lib_cdn.article_encrypt %}{{ theme.lib_cdn.article_encrypt }}{% else %}{{ url_for("js/article.encrypt.js") }}{% endif %}" title="{{ page.title }}" password="{{ page.password }}"></script>
+{% endif %}
 <header id="header" class="header"{% if theme.color %} style="background: {{ theme.color }};"{% endif %}>
   <div class="container">
     <div class="header-container">
